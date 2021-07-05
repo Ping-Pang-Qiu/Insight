@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题颜色 -->
+    <color name="ak_color_accent">#E64E68D7</color>
+
+    <!-- 导航栏颜色 -->
+    <color name="ak_color_navigation_bg">#000000</color>
+
+    <!-- 窗口背景色 -->
+    <color name="ak_color_window_bg_light">#F4F4F4</color>
+
+    <!-- topbar -->
+    <color name="ak_color_topbar_divider_light">#E8E8E8</color>
+
+
+    <!-- 文本 -->
+    <color name="ak_color_txt_h1_black">#131313</color>
+    <color name="ak_color_txt_summary_black">#979797</color>
+
+    <color name="ak_color_txt_h1_white">#F1F1F1</color>
+</resources>

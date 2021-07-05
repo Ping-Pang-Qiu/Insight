@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion build_versions.compile_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        applicationId build_versions.application_id
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode build_versions.version_code
+        versionName build_versions.version_name
+
+        kapt {
+            arguments {
+                arg("room.schemaLocation","$projectDir/room_schemas".toString())
+            }
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile sign_config.storeFile
+            storePassword sign_config.password
+            keyAlias sign_config.keyAlias
+            keyPassword sign_config.password
+        }
+        release {
+            storeFile sign_config.storeFile
+            storePassword sign_config.password
+            keyAlias sign_config.keyAlias
+            keyPassword sign_config.password
+        }
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(':AkFramework')
+    api deps.baseRecyclerViewAdapterHelper
+}

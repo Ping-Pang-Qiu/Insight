@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="AkLayout"></declare-styleable>
+
+    <declare-styleable name="AkTopBar">
+        <attr name="ak_topbar_title_text" format="string" />
+        <attr name="ak_topbar_left_back_enable" format="boolean" />
+        <attr name="ak_topbar_right_menu_enable" format="boolean" />
+    </declare-styleable>
+</resources>

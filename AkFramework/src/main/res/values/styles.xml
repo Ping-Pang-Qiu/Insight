@@ -1,0 +1,22 @@
+<resources>
+
+
+    <style name="AkFrameworkBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/ak_color_accent</item>
+        <item name="colorPrimaryDark">@color/ak_color_accent</item>
+        <item name="colorAccent">@color/ak_color_accent</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:statusBarColor">@color/ak_color_transparent</item>
+        <item name="android:windowBackground">@color/ak_color_white</item>
+        <item name="android:navigationBarColor">@color/ak_color_navigation_bg</item>
+        <!-- 该行会影响顶部条收起时效果,为false时，状态栏颜色不会被改变 -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AkFrameworkApi" parent="AkFrameworkBase"></style>
+
+    <style name="AkFrameworkTheme" parent="AkFrameworkApi"></style>
+
+</resources>

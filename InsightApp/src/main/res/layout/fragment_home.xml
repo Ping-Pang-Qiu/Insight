@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ak.framework.widget.layout.AkLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ak_color_window_bg_light"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <com.ak.framework.widget.topbar.AkTopBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ak.framework.widget.AkTextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/refresh"
+            android:textColor="@color/ak_color_txt_h1_black" />
+    </com.ak.framework.widget.topbar.AkTopBar>
+
+    <com.ak.framework.widget.AkTextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ak_color_white"
+        android:paddingLeft="@dimen/ak_activity_padding_horizontal"
+        android:paddingTop="16dp"
+        android:paddingRight="@dimen/ak_activity_padding_horizontal"
+        android:textColor="@color/ak_color_txt_summary_black"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/ak_activity_padding_horizontal"
+        android:paddingTop="16dp"
+        android:paddingRight="@dimen/ak_activity_padding_horizontal"
+        android:visibility="gone">
+
+        <com.ak.framework.widget.layout.AkLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 进程信息 -->
+            <include
+                android:id="@+id/layout_process"
+                layout="@layout/layout_home_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- 内部存储 -->
+            <include
+                android:id="@+id/layout_internal_storage"
+                layout="@layout/layout_home_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <!-- 外部存储 -->
+            <include
+                android:id="@+id/layout_external_storage"
+                layout="@layout/layout_home_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <!-- SP -->
+            <include
+                android:id="@+id/layout_sp"
+                layout="@layout/layout_home_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <!-- 数据库 -->
+            <include
+                android:id="@+id/layout_db"
+                layout="@layout/layout_home_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </com.ak.framework.widget.layout.AkLinearLayout>
+    </ScrollView>
+
+
+</com.ak.framework.widget.layout.AkLinearLayout>

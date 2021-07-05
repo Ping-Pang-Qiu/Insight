@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ak.framework.widget.AkImageView
+        android:id="@+id/iv_back_arrow"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:padding="10dp"
+        android:src="@drawable/ak_ic_topbar_back_arrow_dark"
+        android:visibility="gone" />
+
+    <com.ak.framework.widget.AkTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:singleLine="true"
+        android:textColor="@color/ak_color_txt_h1_black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <com.ak.framework.widget.AkImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="4dp"
+        android:padding="10dp"
+        android:src="@drawable/ak_ic_topbar_menu_dark"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ak_color_topbar_divider_light" />
+</RelativeLayout>

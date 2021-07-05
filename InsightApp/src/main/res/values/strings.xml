@@ -1,0 +1,20 @@
+<resources>
+    <string name="error_target_app_not_running">目标应用未运行:%s</string>
+    <string name="error_target_app_not_installed">目标应用未安装: %s</string>
+    <string name="error_target_app_files_unavailable">无法读取应用文件，请确认:\n1.使用相同签名打包\n2.所有应用Manifest中都已生命相同sharedUserId</string>
+    <string name="error_support_db_read">暂不支持查看数据库</string>
+
+    <string name="state_is_empty">无内容</string>
+    <string name="dir_is_empty">文件夹为空</string>
+    <string name="state_reading">正在读取中....</string>
+    <string name="state_refresh_success">刷新成功</string>
+
+
+    <string name="target_process_info">主进程信息</string>
+    <string name="shared_preference">SharedPreference</string>
+    <string name="database">数据库</string>
+    <string name="internal_storage">内部存储</string>
+    <string name="external_storage">外部存储</string>
+    <string name="parent_dir">上级目录</string>
+    <string name="refresh">刷新</string>
+</resources>

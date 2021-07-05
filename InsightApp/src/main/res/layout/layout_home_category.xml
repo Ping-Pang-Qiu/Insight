@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ak.framework.widget.layout.AkRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ak_color_white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.ak.framework.widget.AkTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ak_color_txt_h1_black"
+        android:textSize="15dp" />
+
+    <com.ak.framework.widget.AkTextView
+        android:id="@+id/tv_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/state_reading"
+        android:textColor="@color/ak_color_txt_summary_black"
+        android:textSize="12dp" />
+
+    <com.ak.framework.widget.AkImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ak_ic_next_arrow_dark" />
+
+</com.ak.framework.widget.layout.AkRelativeLayout>

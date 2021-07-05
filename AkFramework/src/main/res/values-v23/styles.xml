@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="AkFrameworkApi" parent="AkFrameworkBase">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+</resources>

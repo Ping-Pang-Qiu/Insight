@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="ak_activity_padding_horizontal">16dp</dimen>
+    <dimen name="ak_top_bar_content_height">45dp</dimen>
+</resources>

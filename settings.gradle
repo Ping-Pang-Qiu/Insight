@@ -1,0 +1,3 @@
+include ':InsightApp'
+include ':AkFramework'
+rootProject.name = "Insight"
