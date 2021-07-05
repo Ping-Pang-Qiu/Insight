@@ -24,10 +24,11 @@ android:sharedUserId
 2. TargetApp.TARGET_PACKAGE_NAME 常量设置为目标应用包名
 3. 使用目标应用签名进行打包
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2021070523532679.jpg#pic_center =360x748)
 
+## 示例
+https://img-blog.csdnimg.cn/2021070523532679.jpg
 
+https://img-blog.csdnimg.cn/20210705234423667.jpg
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210705234423667.jpg#pic_center =360x748)
 
 
