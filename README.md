@@ -3,6 +3,7 @@
 
 ## 优势
 使用独立App查看目标应用所有数据。
+
 只在目标应用添加一行代码：
 AndroidManifest.xml中配置相同android:sharedUserId
 
