@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="52dp"
+    android:background="@drawable/ak_sel_color_white_light"
     android:paddingLeft="@dimen/ak_activity_padding_horizontal"
     android:paddingRight="@dimen/ak_activity_padding_horizontal"
     tools:ignore="MissingDefaultResource">

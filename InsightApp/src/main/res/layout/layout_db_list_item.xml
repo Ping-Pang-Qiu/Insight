@@ -3,29 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:paddingLeft="@dimen/ak_activity_padding_horizontal"
+    android:layout_height="45dp"
     android:background="@drawable/ak_sel_color_white_light"
+    android:paddingLeft="@dimen/ak_activity_padding_horizontal"
     android:paddingRight="@dimen/ak_activity_padding_horizontal"
     tools:ignore="MissingDefaultResource">
 
     <TextView
-        android:id="@+id/tv_key"
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:singleLine="true"
         android:layout_marginRight="60dp"
+        android:singleLine="true"
         android:textColor="@color/ak_color_txt_h1_black"
-        android:textSize="12dp" />
+        android:textSize="15dp" />
 
     <TextView
-        android:id="@+id/tv_value"
+        android:id="@+id/tv_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:singleLine="true"
         android:layout_centerVertical="true"
+        android:singleLine="true"
         android:textColor="@color/ak_color_txt_summary_black"
         android:textSize="12dp" />
 

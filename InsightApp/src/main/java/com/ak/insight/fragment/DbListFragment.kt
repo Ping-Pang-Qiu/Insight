@@ -5,8 +5,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ak.framework.app.AkFragment
-import com.ak.framework.util.AkToast
-import com.ak.framework.widget.topbar.AkTopBar
 import com.ak.insight.R
 import com.ak.insight.model.DbModel
 import com.ak.insight.util.Utilities
@@ -48,11 +46,12 @@ class DbListFragment : AkFragment() {
         val recyclerView: RecyclerView = rootView.findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        val adapter = SpFilesAdapter()
+        val adapter = DbFilesAdapter()
         adapter.addData(data.files)
         recyclerView.adapter = adapter
         adapter.setOnItemClickListener { adapter, view, position ->
-            AkToast.show(R.string.error_support_db_read)
+            val dbFile = adapter.data[position] as File
+            startFragment(DbTableListFragment.createFragment(dbFile.absolutePath))
         }
     }
 
@@ -61,11 +60,11 @@ class DbListFragment : AkFragment() {
         mMainScope.cancel()
     }
 
-    class SpFilesAdapter : BaseQuickAdapter<File, BaseViewHolder>(R.layout.layout_sp_list_item) {
+    class DbFilesAdapter : BaseQuickAdapter<File, BaseViewHolder>(R.layout.layout_db_list_item) {
         override fun convert(holder: BaseViewHolder, file: File) {
             holder.setText(
-                R.id.tv_name,
-                "${holder.adapterPosition + 1}.${file.name.substringBeforeLast(".")}"
+                    R.id.tv_name,
+                    "${holder.adapterPosition + 1}.${file.name.substringBeforeLast(".")}"
             )
 
             val tvSize = holder.getView<TextView>(R.id.tv_size)
