@@ -17,7 +17,7 @@ android:sharedUserId
 2. 内部存储： data/包名/
 3. 外部存储
 4. SharedPreference
-5. 数据库(还没开发完)
+5. 数据库
 
 ## 源码配置
 源码修改配置，然后打包
